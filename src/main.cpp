@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
+// Author      : Edward cedeño ruiz
 // Version     :
 // Copyright   : 
 // Description : 

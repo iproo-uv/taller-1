@@ -1,3 +1,7 @@
+//===============================================
+//clase: Arbitro
+//responsabilidad: el arbitro inicia el juego se encarga de...
+//===============================================
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 
 #ifndef SRC_TABLERO_H_

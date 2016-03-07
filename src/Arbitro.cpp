@@ -10,8 +10,8 @@ using namespace std;
 Arbitro::Arbitro() {
     juegoEnCurso = false;
     puntaje = 100.0;
-    srand(time(NULL));
-    filaBolita = 0;
+    srand (time(NULL));
+    filaBolita =0;
     columnaBolita = 0;
 }
 
@@ -20,6 +20,24 @@ Arbitro::~Arbitro() {
 }
 
 void Arbitro::iniciarJuego() {
+	int n:
+	cout << "ingrese la dimension del tablero" << endl;
+	cin >> n;
+	tablero  = Tablero (n);
+	filaBolita = rand() % n;
+	columnaBolita = rand() % n;
+	tablero: setCasilla(filaBolita, columnaBolita, '0');
+	juegoEnCurso = true;
+	while()juegoEnCurso (
+			imprimirTablero();
+	        int fila= 1;
+	        int columna =1;
+	        cout << "ingrese la fila de su tablero:" << endl;
+	        cin >> fila;
+	        cout <<"ingrese la columna de su intento:" <<endl;
+	        cin >> columna;
+	        juegoEnCurso = validarIntento (fila. columna);
+			)
     //Debe implementar un metodo que se encargue de iniciar el juego y controlar su desarrollo
     //Este metodo debe recibir las entradas del usuario, imprimir el tablero y validar los intentos
 }
