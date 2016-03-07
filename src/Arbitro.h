@@ -1,5 +1,8 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
-
+/*
+ * Clase: Arbitro
+ * Responsabilidad: El Arbitro inicia el juego se encarga de...
+ * Colaboración: La clase Arbitro utiliza la clase Tablero
+ * */
 
 #ifndef ARBITRO_H_
 #define ARBITRO_H_
