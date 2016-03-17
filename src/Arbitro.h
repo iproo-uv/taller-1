@@ -1,3 +1,8 @@
+//===========================================
+//clase: Arbitro
+//responsabilidad: el arbitro inicia el juego se encarga de...
+//colaboracion: esta clase no tiene colaboracion
+//=========================================
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 
 

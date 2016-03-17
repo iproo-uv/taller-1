@@ -1,6 +1,7 @@
 //===============================================
-//clase: Arbitro
-//responsabilidad: el arbitro inicia el juego se encarga de...
+//clase: tablero
+//responsabilidad: el tablero se encarga de imprimir la cuadricula de juego
+//colaboracion: esta clase no tiene colaboracion
 //===============================================
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 

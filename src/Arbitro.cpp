@@ -19,7 +19,7 @@ Arbitro::~Arbitro() {
     // TODO Auto-generated destructor stub
 }
 
-void Arbitro::iniciarJuego() {
+void Arbitro::iniciarJuego(){
 	int n:
 	cout << "ingrese la dimension del tablero" << endl;
 	cin >> n;
@@ -43,6 +43,9 @@ void Arbitro::iniciarJuego() {
 }
 
 void Arbitro::imprimirTablero() {
+	cout << "  ";
+	for (int 1 = 0;)
+
     //Debe implementar un metodo que imprima el tablero en pantalla
     //Recuerde que el usuario no puede conocer la posicion de la bolita
 }
