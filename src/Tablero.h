@@ -1,4 +1,8 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
+//=================================================================================
+// Clase: Tablero.
+// Responsabilidad: La clase Tablero se encarga de mostrar la dimensión del mismo.
+// Colaboracion: La clase Tablero no interactúa con ninguna de las otras clases.
+//=================================================================================
 
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
