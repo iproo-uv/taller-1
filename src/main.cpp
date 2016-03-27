@@ -5,7 +5,7 @@
 // Copyright   : 
 // Description : 
 //============================================================================
-
+#include <cstdlib>
 #include <iostream>
 #include "Arbitro.h"
 using namespace std;
@@ -13,5 +13,8 @@ using namespace std;
 int main() {
     Arbitro arbitro = Arbitro();
     arbitro.iniciarJuego();
-	return 0;
+            
+    system("PAUSE");
+
+    return 0;
 }

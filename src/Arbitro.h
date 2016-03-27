@@ -18,8 +18,12 @@ public:
     ~Arbitro();
     void iniciarJuego();
     void imprimirTablero();
+    void imprimirLiniaSuperior();
+    void imprimirLiniaInferior();
+    void imprimirLiniaDivision();
+    void imprimirLiniaDeDatos();
     bool validarIntento(int fila, int columna);
-    int calcularDistancia(int fila, int columna);
+    int calcularDistancia(int columna, int fila);
 };
 
 #endif /* ARBITRO_H_ */

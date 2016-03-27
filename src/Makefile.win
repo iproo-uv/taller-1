@@ -1,0 +1,36 @@
+# Project: Proyecto 1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = Arbitro.o main.o Tablero.o $(RES)
+LINKOBJ  = Arbitro.o main.o Tablero.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = "Proyecto 1.exe"
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "Proyecto 1.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Proyecto 1.exe" $(LIBS)
+
+Arbitro.o: Arbitro.cpp
+	$(CPP) -c Arbitro.cpp -o Arbitro.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Tablero.o: Tablero.cpp
+	$(CPP) -c Tablero.cpp -o Tablero.o $(CXXFLAGS)
