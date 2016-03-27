@@ -1,4 +1,6 @@
 //Debe crear una cabecera de archivo tal como se indico en clase
+//Contrala el proceso durante el juego cuando comienzo lo que transcurre durante el juego y cuando termina
+
 
 #include <iostream>
 #include <cstdlib>

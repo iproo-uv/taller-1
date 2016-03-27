@@ -1,4 +1,5 @@
 //Debe escribir una cabecera de archivo con las indicaciones dadas en clase
+//crea un tablero con dimensiones n para ya ser llamar en arbitro.cpp
 
 #include <iostream>
 #include "Tablero.h"
