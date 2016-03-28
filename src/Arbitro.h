@@ -1,6 +1,10 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
-
-
+//===============================================================================
+// Name        : Arbitro.h
+// Author      : Neydor Avila Navarrete, Joan Sebastian Diaz Ocampo, John Cortez.
+// Version     : 0.0.0.1
+// Copyright   : en este archivo se encuentra la clase Arbitro la cual tiene relacion con el archivo 
+//Tablero.h, aqui se encontrarán varias funciones que se utilizarán en el archivo Arbitro.cpp
+//===============================================================================
 #ifndef ARBITRO_H_
 #define ARBITRO_H_
 

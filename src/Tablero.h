@@ -3,6 +3,18 @@
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
 
+//FICHA CRC:
+
+//clase : Tablero
+
+//responsabilidad : tiene como funcion principal dotar
+//a los demas archivos de funciones que serán de mucha
+// ayuda para desarrollar el juego "encuentra la bolita".
+ 
+//colaboracion : tiene una relacion significativa 
+//con la clase "Arbitro" la cual tiene varias funciones 
+//que le dan al juego un orden y un estilo.
+
 class Tablero {
 private:
     char** casillas;
