@@ -1,43 +1,62 @@
-//Debe crear una cabecera de archivo tal como se indico en clase
+//============================================================================
+// Name        : arbitro.cpp
+// Author      : DIEGO ALEJANDRO RAMIREZ MESTIZO;JHONATAN DAVID CEBALLOS RIVERA 
+// Version     :0.1
+// Copyright   : la clase arbitro contiene los datos que permite
+// Description : iniciar el juego,el tamaño (dimensiones),calcular la distancia,validar los intentos, establecer indicaciones que va tener el juego (puntaje entre otras )
+//============================================================================
 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
+#include <sstream>
+#include <math.h>
 #include "Arbitro.h"
 using namespace std;
 
-Arbitro::Arbitro() {
+Arbitro::Arbitro(int tamanio) {
     juegoEnCurso = false;
-    puntaje = 100.0;
+    puntaje = 98.0 + tamanio*2;
     srand(time(NULL));
-    filaBolita = 0;
-    columnaBolita = 0;
+    tablero = Tablero(tamanio);
+    filaBolita = rand()%tamanio;
+    columnaBolita = rand()%tamanio;
+    
+    cout<<"la pelota es en ::   fila "<< "filaBolita" <<" columna "<< "columnaBolita" <<endl;
 }
 
 Arbitro::~Arbitro() {
-    // TODO Auto-generated destructor stub
 }
 
 void Arbitro::iniciarJuego() {
-    //Debe implementar un metodo que se encargue de iniciar el juego y controlar su desarrollo
-    //Este metodo debe recibir las entradas del usuario, imprimir el tablero y validar los intentos
+    juegoEnCurso = true;
+    printf("juego creado\n");
+    printf("=================================\n");
+    imprimirTablero();
 }
 
 void Arbitro::imprimirTablero() {
-    //Debe implementar un metodo que imprima el tablero en pantalla
-    //Recuerde que el usuario no puede conocer la posicion de la bolita
+	tablero.ImprimirTablero();
 }
+	
 
-int Arbitro::calcularDistancia(int fila, int columna){
-    //Debe implmentar un metodo que calcula la distancia entre la posicion (fila, columna)
-    //Y la posicion real de la bolita
+void Arbitro::calcularDistancia(int fila, int columna){
+	float distancia = sqrt((pow((filaBolita-fila),2)+pow(columnaBolita-columna,2)));//();
+    cout<<"estas a "<<distancia<<" de tu objetivo"<<endl;
 }
 
 bool Arbitro::validarIntento(int fila, int columna){
-    //Este metodo debe validar el intento del usuario, debe informarle si fue correcto o no
-    //Retorna verdadero si el intento es correcto y falso si no lo es
-    //En caso de no serlo debe realizar los cambios correspondientes a las variables miembro
-    //Y debe informar por pantalla cual fue la distancia del fallo y el puntaje restante
+	if(fila==filaBolita&&columna==columnaBolita){
+		cout<<"Felicidades has gando !!!!"<<endl;
+		cout<<"Tu puntaje es "<<puntaje<<endl;
+		juegoEnCurso=false;
+		return true;
+	}else{
+		puntaje+=-5;
+		tablero.setCasilla(fila,columna);
+    	return false;
+	}
+	
 }
 
