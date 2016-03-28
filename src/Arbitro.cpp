@@ -167,10 +167,10 @@ void Arbitro::imprimirTablero() {
     cout<<endl;
 }
 
-int Arbitro::calcularDistancia(int columna, int fila){
+double Arbitro::calcularDistancia(int columna, int fila){
     //Debe implmentar un metodo que calcula la distancia entre la posicion (fila, columna)
     //Y la posicion real de la bolita
-    double(sqrt((columnaBolita - columna)*(columnaBolita - columna)+(filaBolita - fila)*(filaBolita - fila)));
+    return(sqrt(((columnaBolita - columna)*(columnaBolita - columna))+((filaBolita - fila)*(filaBolita - fila))));
 
 }
 
