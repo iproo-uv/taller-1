@@ -1,9 +1,9 @@
 //============================================================================
 // Name        : taller1.cpp
 // Author      : Edward cedeño ruiz
-// Version     :
+// Version     : 01
 // Copyright   : 
-// Description : 
+// Description :
 //============================================================================
 
 #include <iostream>

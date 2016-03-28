@@ -1,3 +1,8 @@
+//===============================================
+//clase: tablero
+//responsabilidad: el tablero se encarga de imprimir la cuadricula de juego
+//colaboracion: esta clase no tiene colaboracion
+//===============================================
 //Debe escribir una cabecera de archivo con las indicaciones dadas en clase
 #include <iostream>
 #include "Tablero.h"
@@ -35,11 +40,12 @@ char Tablero::getCasilla(int x, int y) {
 }
 
 void Tablero::setCasilla(int x, int y, char value) {
-	casillas [x][y] = value;
+	casillas[x][y] = value;
     //Debe asignarle un valor de entrada "value" a una casilla del tablero (x,y)
 }
 
 int Tablero::getDimension() {
+	return dimension;
     //Debe devolver la dimension del Tablero
 }
 

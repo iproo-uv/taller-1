@@ -1,3 +1,8 @@
+//===============================================
+//clase: Arbitro
+//responsabilidad: el Arbitro se encarga de iniciar el juego, de dar explicacion al procedimiento del juego
+//colaboracion: esta clase no tiene colaboracion
+//===============================================
 //Debe crear una cabecera de archivo tal como se indico en clase
 
 #include <iostream>
@@ -43,7 +48,7 @@ void Arbitro::iniciarJuego(){
 }
 
 void Arbitro::imprimirTablero() {
-	cout << "  ";
+	cout << " imprimir tablero ";
 	for (int 1 = 0;)
 
     //Debe implementar un metodo que imprima el tablero en pantalla
