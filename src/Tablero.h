@@ -1,5 +1,6 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
-
+//Clase: Tablero
+//Responsablidad: Se encarga de crear el tablero del juego, sus dimensiones y numero de casillas.
+//Colaboración:  la clase Tablero no tiene colaboracion de otras clases.
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
 
