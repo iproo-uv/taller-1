@@ -6,14 +6,16 @@
 class Tablero {
 private:
     char** casillas;
-    int dimension;
+    int dim;
+   	char** matriz;
 public:
-    Tablero();
-    Tablero(int n);
+    Tablero(int tm);
     ~Tablero();
+    void ImprimirTablero();
     char getCasilla(int x, int y);
-    void setCasilla(int x, int y, char value);
-    int getDimension();
+    void setCasilla(int x, int y);
+    int getDim();
+    
 };
 
 #endif /* SRC_TABLERO_H_ */
