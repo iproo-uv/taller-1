@@ -56,11 +56,24 @@ void Arbitro::imprimirTablero() {
 }
 
 int Arbitro::calcularDistancia(int fila, int columna){
+	float distancia = sqrt ((pow((filaBolita-fila),2)+pow(columnaBolita-columna,2)));
+	cout<<"Estas a" <<distancia<< "de encontrar la bolita Sigue intentando" <<endl;
     //Debe implmentar un metodo que calcula la distancia entre la posicion (fila, columna)
     //Y la posicion real de la bolita
 }
 
 bool Arbitro::validarIntento(int fila, int columna){
+	if(fila==filaBolita&&columna==columnaBolita){
+		cout<<"¡¡En Hora Buena Has Ganado!!" <<endl;
+		cout<<"tu puntaje es" <<puntaje<<endl;
+		juegoEnCurso=false;
+		return true;
+	}else	{
+		      puntaje+== 5;
+		      tablero.setCasillas(fila,columna);
+		      return false;
+	        }  
+	}
     //Este metodo debe validar el intento del usuario, debe informarle si fue correcto o no
     //Retorna verdadero si el intento es correcto y falso si no lo es
     //En caso de no serlo debe realizar los cambios correspondientes a las variables miembro
