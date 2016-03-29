@@ -71,7 +71,7 @@ bool Arbitro::validarIntento(int fila, int columna){
 	}else	{
 		      puntaje+== 5;
 		      tablero.setCasillas(fila,columna);
-		      return false;
+		      return false;  
 	        }  
 	}
     //Este metodo debe validar el intento del usuario, debe informarle si fue correcto o no
