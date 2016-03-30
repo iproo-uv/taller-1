@@ -1,14 +1,32 @@
 //Debe escribir una cabecera de archivo con las indicaciones dadas en clase
+//============================================================================
+ // Nombre                    : Tablero.cpp
+ // Autores                   : Diego Delgado , Alejandro Becerra
+ // Versión                   : 1.0.0
+ // Fecha creación            : 22/02/2016
+ // Fecha última modificación : 28/03/2016
+ //============================================================================
 #include <iostream>
 #include "Tablero.h"
 
 using namespace std;
 
 Tablero::Tablero() {
-    //Debe realizar la inicializacion por defecto de las variables miembro de la clase Tablero
+    casillas=NULL;
+    dimension = 0;
 }
 
 Tablero::Tablero(int n) {
+    dimension = n;
+    casillas = new char*[n];
+    for(int i=0; i<n ; i++)
+    {
+        casillas[i] = new char[n];
+        for(int j=0; j<n; j++)
+        {
+            casillas[i][j]='x';
+        }
+    }
     //Debe realizar la inicializacion de las variables miembro de la clase Tablero considerando una entrada n
 }
 
@@ -18,13 +36,16 @@ Tablero::~Tablero() {
 
 char Tablero::getCasilla(int x, int y) {
     //Debe devolver el valor de la posicion (x,y) del tablero
+    return casillas[x][y];
 }
 
 void Tablero::setCasilla(int x, int y, char value) {
     //Debe asignarle un valor de entrada "value" a una casilla del tablero (x,y)
+    casillas[x][y] = value;
 }
 
 int Tablero::getDimension() {
     //Debe devolver la dimension del Tablero
+    return dimension;
 }
 
