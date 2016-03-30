@@ -1,9 +1,4 @@
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
-//=====================================================================================
- // Clase: Arbitro.h
- // Responsabilidad: La clase pone en masrcha el juego, crea el tablero, y controla el puntaje
- // Colaboración: La clasenecesita colaboracion de la clase Tablero.h
- //=====================================================================================
 
 
 #ifndef ARBITRO_H_
