@@ -1,9 +1,9 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
-// Version     :
-// Copyright   : 
-// Description : 
+// Author      : Victor Manuel Marin Duque (1556071) & Daniel Duque López (1558569).
+// Version     : 1.6
+// Copyright   : GNU GPL (free software).
+// Description : Juego encontrar la bola.
 //============================================================================
 
 #include <iostream>
