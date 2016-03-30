@@ -6,6 +6,8 @@
  // Fecha creación            : 22/02/2016
  // Fecha última modificación : 28/03/2016
  //============================================================================
+
+
 #include <iostream>
 #include "Tablero.h"
 

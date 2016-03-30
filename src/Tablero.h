@@ -5,8 +5,6 @@
  // Colaboración: La clase no necesita colaboracion de otra clase.
  //=====================================================================================
 
-
-
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
 
