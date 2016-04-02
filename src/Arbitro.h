@@ -25,7 +25,7 @@ public:
     void imprimirLiniaDivision();
     void imprimirLiniaDeDatos();
     bool validarIntento(int fila, int columna);
-    int calcularDistancia(int columna, int fila);
+    double calcularDistancia(int columna, int fila);
 };
 
 #endif /* ARBITRO_H_ */

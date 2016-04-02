@@ -63,7 +63,7 @@ void Arbitro::iniciarJuego() {
                                 }
        else{
             if(tablero.getCasilla(x,y)=='X'){//este if interpreta si el valor ingresado ya a sido fallido
-            puntaje = puntaje - (puntaje/(tamano*tamano));
+            puntaje = floor (puntaje - (puntaje/(tamano*tamano)));
             cout<<"intento fallido"<<endl;
             cout<<"su puntacion es: "<<puntaje<<endl;
             cout<<"la bolita esta a "<<calcularDistancia(x,y)<<endl;
@@ -170,7 +170,9 @@ void Arbitro::imprimirTablero() {
 double Arbitro::calcularDistancia(int columna, int fila){
     //Debe implmentar un metodo que calcula la distancia entre la posicion (fila, columna)
     //Y la posicion real de la bolita
-    return(sqrt(((columnaBolita - columna)*(columnaBolita - columna))+((filaBolita - fila)*(filaBolita - fila))));
+    int a=(columnaBolita - columna);
+    int b=(filaBolita - fila);
+    return(floor (sqrt (pow(a,2) + pow(b,2))));
 
 }
 
