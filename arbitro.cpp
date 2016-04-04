@@ -16,7 +16,7 @@ Arbitro::Arbitro()
 	system ("color 3");
 	 juegoEnCurso = false;
      puntaje = 100.0;//Este sera el punta principal, de ser correcta la respusta la primeras vez.
-     srand(time(NULL));//Aquí crenos los numeros aleatorios, partiendo de una semilla Dinamica(srand) que en este caso sera la hora del sistema en segundos(NULL).
+     srand(time(NULL));//AquÃ­ crenos los numeros aleatorios, partiendo de una semilla Dinamica(srand) que en este caso sera la hora del sistema en segundos(NULL).
      filaBolita = 0;
      columnaBolita = 0;
  } 
@@ -30,7 +30,7 @@ Arbitro::~Arbitro()
 void Arbitro::iniciarJuego() 
 {
 //metodo que se encargue de iniciar el juego y controlar su desarrollo
-cout << "           HOLA ESTE ES EL JUEGO  \250DONDE ESTA LA BOLITA?"<< endl<<endl;//impimira al comienzo del juego el texto en azul "HOLA ESTE ES EL JUEGO ¿DONDE ESTA LA BOLITA?"
+cout << "           HOLA ESTE ES EL JUEGO  \250DONDE ESTA LA BOLITA?"<< endl<<endl;//impimira al comienzo del juego el texto en azul "HOLA ESTE ES EL JUEGO Â¿DONDE ESTA LA BOLITA?"
 cout << "\250Cuanto te costara encontrarla?"<< endl;	                               
 cout << "empecemos.   "<< endl<<endl;
 int dimension;
@@ -65,8 +65,8 @@ cout<< "                               "<< endl;
 
 
 
-cout<< "Ingresa el tama\xA4o del tablero de juego: "<< endl;//imprimira el tamaño del cual queremos nuestro tablero de juego "dimencion"  
-if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra ó es un numero 
+cout<< "Ingresa el tama\xA4o del tablero de juego: "<< endl;//imprimira el tamaÃ±o del cual queremos nuestro tablero de juego "dimencion"  
+if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra Ã³ es un numero 
 {
 letra[strlen(letra)-1] = '\0'; 
 noNumero = false; 
@@ -77,7 +77,7 @@ if (10 < dimension)//el tablero debe ser maximo de 10 x 10
 {
 noNumero = true;
 }
-if (dimension < 2)//el tamaño del tablero como minimo debe ser de 2 x 2
+if (dimension < 2)//el tamaÃ±o del tablero como minimo debe ser de 2 x 2
 {
 noNumero = true;
 }
@@ -92,7 +92,7 @@ cout << "\n\nEl numero debe ser mayor de 1 y menor que 10." <<endl <<endl;//impr
 }	
 }
 system("cls");
-cout << "Este es le tama\xA4o de tu tablero de juego " << dimension << " X " << dimension << "..." <<endl <<endl;//imprime el tamaña de nuestro tablero
+cout << "Este es le tama\xA4o de tu tablero de juego " << dimension << " X " << dimension << "..." <<endl <<endl;//imprime el tamaÃ±a de nuestro tablero
 Tablero tablerito (dimension);
 tablero = tablerito;
 filaBolita = rand ()% (tablero.getDimension());
@@ -149,7 +149,7 @@ validar=false;// de no acertar la posicion, a continuacion le pedira nuevamente 
 while (!validar) 
 {
 cout<< "\250En cual fila esta la bolita? : "<< endl; 
-if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra ó es un numero 
+if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra Ã³ es un numero 
 {	
 letra[strlen(letra)-1] = '\0'; 
 noNumero = false; 
@@ -176,7 +176,7 @@ validar = false;
 while (!validar) 
 {
 cout<< "En que columna esta la bolita?: "<< endl;//pregunta al ususario en que columna cree que esta la bolita 
-if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra ó es un numero 
+if (fgets (letra, sizeof letra, stdin) != NULL) //estamos  validando si mi entrada es un tipo de letra Ã³ es un numero 
 {
 letra[strlen(letra)-1] = '\0'; 
 noNumero = false; 
@@ -214,7 +214,7 @@ juegoEnCurso = true;
 }
 if (fila-1 == filaBolita && columna-1 == columnaBolita)//cuando la posiscion ingresada por el usuario es correcta 
 {
-cout<< "\n\         HAS GANADO TU PUNTAJE FINAL ES: "<< puntaje<<"PUNTOS"<<endl;//mensaje de que el ususario ha ganado el juego, en este caso se llama la funcion<<puntaje la encargada
+cout<<"       HAS GANADO TU PUNTAJE FINAL ES: "<< puntaje<<"PUNTOS"<<endl;//mensaje de que el ususario ha ganado el juego, en este caso se llama la funcion<<puntaje la encargada
 cout<<"..........................................................."<<endl;     //de calcular la puntuacion de jugador((usuario)) y la imprime
 
 cout<<"..........................................................."<<endl;
@@ -273,7 +273,7 @@ cout<<".................:@@###====******++++***=:................."<<endl;
 
 cout<<".................:@@###::::********:::**:=:................"<<endl;
 
-cout<<"..........................................................."<<endl;//imagen de un trafeo como señal de que el jugador gano
+cout<<"..........................................................."<<endl;//imagen de un trafeo como seÃ±al de que el jugador gano
          
 puntaje = 0;
 } 
