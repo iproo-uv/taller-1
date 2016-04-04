@@ -1,5 +1,11 @@
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 
+/*Clase: Arbitro.h
+  Responsabilidad: inicia el juego, imprime el tablero, calcula la distancia entre las casillas, valida los intentos del jugador y
+                    calcula y muestra el puntaje del jugador.
+  Colaboración: Tablero.h
+
+*/
 
 #ifndef ARBITRO_H_
 #define ARBITRO_H_
