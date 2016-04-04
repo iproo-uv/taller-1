@@ -2,7 +2,7 @@
 // TALLER 1.0
 // Name        : main.cpp
 // Author      : Geraldine Lopez Villaneda- Maria Alejandra Bernal Toro
-// Version     : Dev-C++ 5.11
+// Version     : 0.1
 // Copyright   : Geraldine Lopez - Alejandra Bernal 
 // Description : juego ¿Donde esta la bolita? en c++
 //============================================================================
@@ -10,12 +10,8 @@
 #include <cstdlib>
 #include "Arbitro.h"
 using namespace std;
-
-int main() 
-{
+int main() {
 	Arbitro arbitro = Arbitro();
-    arbitro.iniciarJuego();
-    
-
-return 0;
+	arbitro.iniciarJuego();
+	return 0;
 }
