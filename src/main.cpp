@@ -2,19 +2,16 @@
 // Name        : main.cpp
 // Author      : Neydor Avila Navarrete, Joan Sebastian Diaz Ocampo, John Cortez.
 // Version     :0.0.0.1
-// Copyright   : 
-// Description : 
+// Copyright   : Neydor Avila Navarrete, Joan Sebastian Diaz Ocampo, John Cortez.
+// Description : Programa del juego "Encontrar la Bolita"...
 //============================================================================
 #include <iostream>
 #include <cstdlib>
 #include "Arbitro.h"
 using namespace std;
 
-int main() 
-{
+int main() {
 	Arbitro arbitro = Arbitro();
-    arbitro.iniciarJuego();
-    
-
-return 0;
+	arbitro.iniciarJuego();
+	return 0;
 }
