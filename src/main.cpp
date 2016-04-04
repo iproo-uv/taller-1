@@ -1,9 +1,7 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
-// Version     :
-// Copyright   : 
-// Description : 
+// Author      : Diana Marcela Rodriguez - Daniela Giraldo Mejia
+// Version     : 0.0.1
 //============================================================================
 
 #include <iostream>
@@ -15,3 +13,4 @@ int main() {
     arbitro.iniciarJuego();
 	return 0;
 }
+
