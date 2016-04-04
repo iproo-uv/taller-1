@@ -2,7 +2,7 @@
 // TALLER 1.0
 // Name        : Arbitro.cpp 
 // Author      : Geraldine Lopez Villaneda- Maria Alejandra Bernal Toro
-// Version     : Dev-C++ 5.11
+// Version     : 0.2
 // Copyright   : Geraldine Lopez - Alejandra Bernal 
 // Description : juego ¿Donde esta la bolita? en c++
 //============================================================================
