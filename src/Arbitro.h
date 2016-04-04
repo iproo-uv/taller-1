@@ -1,4 +1,6 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
+//Clase: Arbitro
+//Responsabilidad: Contiene las variables públicas y privadas de la clase Arbitro
+//Colaboracion: se relaciona con la clase Tablero
 
 
 #ifndef ARBITRO_H_
@@ -19,7 +21,7 @@ public:
     void iniciarJuego();
     void imprimirTablero();
     bool validarIntento(int fila, int columna);
-    int calcularDistancia(int fila, int columna);
+    double calcularDistancia(int fila, int columna);
 };
 
 #endif /* ARBITRO_H_ */

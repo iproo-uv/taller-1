@@ -1,4 +1,6 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
+//Clase: Tablero
+//Responsabilidad: contiene las variables píblicas y privadas de la clase tablero
+//Colaboracion: colabora con la clase Arbitro
 
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
