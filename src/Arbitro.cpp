@@ -1,9 +1,9 @@
 //============================================================================
 // Nombre                    : Arbitro.cpp
 // Autores                   : Cristhian Candelo, Laura Higuera
-// Versión                   : 1.0.1
-// Fecha creación            : 22/02/2016
-// Fecha última modificación : 23/03/2016
+// VersiÃ³n                   : 1.0.1
+// Fecha creaciÃ³n            : 22/02/2016
+// Fecha Ãºltima modificaciÃ³n : 23/03/2016
 //============================================================================
 
 
@@ -37,6 +37,7 @@ void Arbitro::iniciarJuego()
     columnaBolita = rand() % tablero.getDimension();
     int fila;
     int columna;
+    cout << "Â¿DONDE ESTA LA BOLITA?" << endl;
 
     do
     {
@@ -45,22 +46,23 @@ void Arbitro::iniciarJuego()
         cout << "Ingrese columna" << endl;
         cin>>columna;
         if (validarIntento(fila, columna)== true)
-        {
-        	juegoEnCurso = true;
-        }
+            {
+               	juegoEnCurso = true;
+            }
 
         else
-        {
+            {
         	juegoEnCurso = false;
         	cout << "La bolita esta a " << calcularDistancia(fila,columna)<< " casillas. " << endl;
         	puntaje = (puntaje / (tablero.getDimension() * tablero.getDimension()));
         	cout << "Su puntaje es " << puntaje << endl;
+        	cout << "Ingrese nuevo intento " << endl ;
 
         }
 
     }while (!juegoEnCurso);
 
-    cout << "¡ACERTASTE! El juego ha terminado. ";
+    cout << "Â¡ACERTASTE! El juego ha terminado. ";
     cout << "Su puntaje es " << puntaje << endl;
 }
 
