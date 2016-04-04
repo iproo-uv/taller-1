@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
+// Author      : Sandro Mafla, Jersson Andres Martinez 
 // Version     :
 // Copyright   : 
 // Description : 
