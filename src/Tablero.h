@@ -1,7 +1,22 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
+//============================================================================
+// Name        : taller1.cpp
+// Author      : Diana Marcela Rodriguez - Daniela Giraldo Mejia
+// Version     : 0.0.1
+//============================================================================
 
 #ifndef SRC_TABLERO_H_
 #define SRC_TABLERO_H_
+
+
+
+/*
+   Clase: Tablero
+   Responsabilidad: 
+   - Crea la dimension y casillas del arreglo (tablero)
+    
+   Colaboracion: Ninguna
+*/
+
 
 class Tablero {
 private:
