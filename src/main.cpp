@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
+// Author      : Juan camilo ordoñez arbelaez - 201556235-3743
 // Version     :
 // Copyright   : 
 // Description : 
