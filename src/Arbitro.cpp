@@ -1,13 +1,17 @@
-//Debe crear una cabecera de archivo tal como se indico en clase
+//Clase: Arbitro
+//Responsabilidad: controla el juego, lo inicia, imprime el tablero, valida intentos y calcula la distancia
+//Colaboracion: colabora con la clase Tablero
 
 #include <iostream>
+#include <windows.h>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
 #include "Arbitro.h"
 using namespace std;
 
-Arbitro::Arbitro() {
+Arbitro::Arbitro(){
+    tablero = Tablero();
     juegoEnCurso = false;
     puntaje = 100.0;
     srand(time(NULL));
@@ -19,25 +23,72 @@ Arbitro::~Arbitro() {
     // TODO Auto-generated destructor stub
 }
 
-void Arbitro::iniciarJuego() {
-    //Debe implementar un metodo que se encargue de iniciar el juego y controlar su desarrollo
-    //Este metodo debe recibir las entradas del usuario, imprimir el tablero y validar los intentos
+void Arbitro::iniciarJuego(){
+    int casillas;
+    cout << "Ingrese las casillas del tablero:" << endl;
+    cin >> casillas;
+    tablero = Tablero(casillas);
+    srand(time(0));
+    filaBolita = rand()%casillas;
+    columnaBolita = rand()%casillas;
+    imprimirTablero();
+	while(!juegoEnCurso){
+		int fila;
+		cout << "\nIngrese el numero de fila: " << endl;
+		cin >> fila;
+		int columna;
+		cout << "Ingrese el numero de columna: " << endl;
+		cin >> columna;
+		if(validarIntento(fila-1,columna-1)){
+            if(filaBolita == fila-1 && columnaBolita == columna-1){
+            juegoEnCurso = true;
+            tablero.setCasilla(fila-1,columna-1,'0');
+            cout << "Has encontrado la bolita!!"
+                 << "\nTu puntaje es: "
+                 << puntaje << endl;
+            }
+            else{
+                if(tablero.getCasilla(fila-1,columna-1) == '_'){
+                    cout << "Ya se busco en la casilla" << endl;
+                }
+                else{
+                    tablero.setCasilla(fila-1,columna-1,'_');
+                    cout << "Esta a "
+                         << calcularDistancia(fila-1,columna-1)
+                         << " casillas de la bolita" << endl;
+                    puntaje = puntaje - 100/(tablero.getDimension()*tablero.getDimension());
+                }
+            }
+		}
+		else{
+            cout << "Posicion invalida" << endl;
+		}
+		system("pause");
+		system("cls");
+		imprimirTablero();
+	}
+
 }
 
 void Arbitro::imprimirTablero() {
-    //Debe implementar un metodo que imprima el tablero en pantalla
-    //Recuerde que el usuario no puede conocer la posicion de la bolita
+    for(int i=0;i<tablero.getDimension();i++){
+        for(int j=0;j<tablero.getDimension();j++){
+            cout << tablero.getCasilla(i,j);
+        }
+        cout << endl;
+    }
 }
 
-int Arbitro::calcularDistancia(int fila, int columna){
-    //Debe implmentar un metodo que calcula la distancia entre la posicion (fila, columna)
-    //Y la posicion real de la bolita
+double Arbitro::calcularDistancia(int fila, int columna){
+    return sqrt(pow(fila-filaBolita,2)) +
+    sqrt(pow(columna-columnaBolita,2));
 }
 
 bool Arbitro::validarIntento(int fila, int columna){
-    //Este metodo debe validar el intento del usuario, debe informarle si fue correcto o no
-    //Retorna verdadero si el intento es correcto y falso si no lo es
-    //En caso de no serlo debe realizar los cambios correspondientes a las variables miembro
-    //Y debe informar por pantalla cual fue la distancia del fallo y el puntaje restante
+    bool intento = true;
+    if(fila >= tablero.getDimension() ||
+        columna >= tablero.getDimension()){
+        intento = false;
+    }
+    return intento;
 }
-
