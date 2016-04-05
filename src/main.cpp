@@ -1,16 +1,17 @@
 //============================================================================
 // Name        : taller1.cpp
-// Author      : 
-// Version     :
+// Author      : Edward cedeño ruiz
+// Version     : 01
 // Copyright   : 
-// Description : 
+// Description :
 //============================================================================
 
-#include <iostream>
+#include <iostream> 
 #include "Arbitro.h"
-using namespace std;
+using namespace std; 
 
-int main() {
+int main ( )
+{
     Arbitro arbitro = Arbitro();
     arbitro.iniciarJuego();
 	return 0;

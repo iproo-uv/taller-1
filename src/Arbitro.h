@@ -1,7 +1,12 @@
+//===========================================
+//clase: Arbitro
+//responsabilidad: el arbitro inicia el juego se encarga de dar explicacion al procedimiento del juego
+//colaboracion: esta clase no tiene colaboracion
+//=========================================
 //Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 
 
-#ifndef ARBITRO_H_
+#ifndef ARBITRO_H_  
 #define ARBITRO_H_
 
 #include "Tablero.h"
@@ -20,6 +25,6 @@ public:
     void imprimirTablero();
     bool validarIntento(int fila, int columna);
     int calcularDistancia(int fila, int columna);
-};
+}; 
 
 #endif /* ARBITRO_H_ */
