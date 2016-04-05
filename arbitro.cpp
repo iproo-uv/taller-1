@@ -288,5 +288,5 @@ bool Arbitro::validarIntento(int fila, int columna)
         imprimirTablero();                                                                       //posicion verdadera de la bolita
         cout<<endl;
     }
-    *//fin
+    //fin
 }
