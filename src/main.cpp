@@ -11,11 +11,9 @@
 #include "Arbitro.h"
 using namespace std;
 
-int main() 
-{
+int main() {
 	Arbitro arbitro = Arbitro();
-    arbitro.iniciarJuego();
-    
+	arbitro.iniciarJuego();
 
-return 0;
+	return 0;
 }
