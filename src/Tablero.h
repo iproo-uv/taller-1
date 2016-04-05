@@ -3,9 +3,9 @@
 //responsabilidad: el tablero se encarga de imprimir la cuadricula de juego
 //colaboracion: esta clase no tiene colaboracion
 //===============================================
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
 
-#ifndef SRC_TABLERO_H_
+
+#ifndef SRC_TABLERO_H_ 
 #define SRC_TABLERO_H_
 
 class Tablero {
