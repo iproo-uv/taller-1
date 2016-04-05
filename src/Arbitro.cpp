@@ -55,9 +55,10 @@ void Arbitro::imprimirTablero() {
 	 		if (tablero.getCasilla(i,j)=='B'){
 	 			cout<< "X ";
 	 			}
-	 			else{
-	 				cout<<tablero.getCasilla(i,j)<<" ";
-	 			}
+	 			 
+	 		     else {
+	 				   cout<<tablero.getCasilla(i,j)<<" ";
+	 			      }
 	 		}
 	 		cout<<endl<<endl;
 	 	}	
