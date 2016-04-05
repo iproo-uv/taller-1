@@ -44,10 +44,23 @@ void Arbitro::iniciarJuego(){
 
 void Arbitro::imprimirTablero() {
 	cout << "imprimir tablero";
-	for (int 1 = 0; < tablero.getDimension(); i++){
-			cout << i <<"";
-	for (int j = 0 ; j < tablero.getDimension(); j++)
-	}	
+	for(int k=0; k<tablero.getDimension(); k++){
+	 		cout<<k<<" ";
+	 	}
+	 	cout<<endl<<endl;
+	 	for(int i=0; i<tablero.getDimension(); i++){
+	 		cout<<i<<" ";
+	 		for(int j=0; j<tablero.getDimension(); j++){
+	 		
+	 		if (tablero.getCasilla(i,j)=='B'){
+	 			cout<< "X ";
+	 			}
+	 			else{
+	 				cout<<tablero.getCasilla(i,j)<<" ";
+	 			}
+	 		}
+	 		cout<<endl<<endl;
+	 	}	
 
 }
 

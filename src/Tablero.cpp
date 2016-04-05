@@ -12,7 +12,7 @@ using namespace std;
 Tablero::Tablero() {
 	dimension = 0;
 	casillas = NULL;
-   
+    
 }
 
 Tablero::Tablero(int n) {

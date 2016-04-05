@@ -3,7 +3,7 @@
 //responsabilidad: el tablero se encarga de imprimir la cuadricula de juego
 //colaboracion: esta clase no tiene colaboracion
 //===============================================
-
+ 
 
 #ifndef SRC_TABLERO_H_ 
 #define SRC_TABLERO_H_

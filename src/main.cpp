@@ -6,7 +6,7 @@
 // Description :
 //============================================================================
 
-#include <iostream>
+#include <iostream> 
 #include "Arbitro.h"
 using namespace std; 
 
