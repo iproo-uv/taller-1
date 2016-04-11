@@ -1,5 +1,9 @@
-//Debe escribir una cabecera de archivo con la plantilla CRC: Clase, Responsabilidad y Colaboracion
-
+//=====================================================================================
+// Clase: Arbitro.
+// Responsabilidad: La clase Arbitro inicializa el juego, muestra el puntaje después
+//                  de dar una posición y el número de casillas si se erró en el tiro.
+// Colaboración: La clase Arbitro obtiene colaboración de la clase Tablero.
+//=====================================================================================
 
 #ifndef ARBITRO_H_
 #define ARBITRO_H_
@@ -14,7 +18,7 @@ private:
     int filaBolita;
     int columnaBolita;
 public:
-    Arbitro();
+    Arbitro(Tablero);
     ~Arbitro();
     void iniciarJuego();
     void imprimirTablero();
